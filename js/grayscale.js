@@ -39,4 +39,16 @@
   // // Collapse the navbar when page is scrolled
   // $(window).scroll(navbarCollapse);
 
+  var navbarShowTitle = function() {
+    if ($("#mainNav").offset().top > 100) {
+      $("a.tvp-title").fadeIn(100);
+    } else {
+      $("a.tvp-title").fadeOut(100);
+    }
+  };
+  // Collapse now if page is not at top
+  navbarShowTitle();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarShowTitle);
+
 })(jQuery); // End of use strict
