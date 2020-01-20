@@ -12,8 +12,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: var(--phYellow);
-  border: 1px solid var(--phYellow);
+  color: white;
+  border: 1px solid white;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -28,6 +28,15 @@
   letter-spacing: 0.5rem;
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 12px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--phYellow);
 }
 
 .philippines-star {
